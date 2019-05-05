@@ -9,19 +9,21 @@
 
 ![image][image1]
 
-In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. The goal of the agent is to maintain its position at the target location for as many time steps as possible.
+In this environment, two agents play tennis table. The agents control their rackets to bounce a ball over the net. Every agent hits the ball over the net receives a reward of +0.1, and a reward -0.01 if the agent lets the ball hits the ground or hits the ball out of the bounds. The goal of every agent is to maintain the ball in play.
 
-The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+The observation space consists of 8 variables corresponding to position and velocity of the ball and the racket. Each agent receives its own local observation of the enviornement, and has two actions available corresponding to movement toward (or away from) the net and jumping. 
+
+The task is episodic. To solve the enviornment, the agents must get an average score of at least +0.5 over 100 consecutive episodes after taking the maximum score over both agents. 
 
 ### Getting started
 
-Download the Continous_Control repository from the top-right button. You can also clone the repository and downloaded from a terminal in your workspace directory using the following command line:
+Download the MultiAgent repository from the top-right button. You can also clone the repository and downloaded from a terminal in your workspace directory using the following command line:
     
     git clone https://github.com/OlaAhmad/MultiAgent.git
         
 ### Usage
 
-Go to the Continuous_Control folder and open the notebook to train the agent as follows:
+Go to the MultiAgent folder and open the Tennis.ipynb notebook as follows:
 
     cd MultiAgent
     Jupyter notebook Tennis.ipynb
@@ -30,10 +32,11 @@ When runing the notebook, the actor-critic agent will start training over a numb
 
 ### Codes
 
-I added two files to train the agent for the notebook: 
+The repository contains the following codes: 
 1. model.py: builds actor and critic neural network architectures. 
-2. dqn_agent.py: interacts with Banana enviornement and learns the agent from it.
-The code was adapted from the lesson (ddpg-pendulum).
+2. MADDPG.py: builds the multi agents class based on the DDPG algorithm.
+3. Tennis.ipynb: notebook to train DDPG multi agents over 3000 episodes.
+4. Trained actor and critic networks saved in .pth formate. 
 
 ### Resources
 
