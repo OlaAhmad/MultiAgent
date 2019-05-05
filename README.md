@@ -11,7 +11,7 @@
 
 In this environment, two agents play tennis table. The agents control their rackets to bounce a ball over the net. Every agent hits the ball over the net receives a reward of +0.1, and a reward -0.01 if the agent lets the ball hits the ground or hits the ball out of the bounds. The goal of every agent is to maintain the ball in play.
 
-The observation space consists of 8 variables corresponding to position and velocity of the ball and the racket. Each agent receives its own local observation of the enviornement, and has two actions available corresponding to movement toward (or away from) the net and jumping. 
+The observation space consists of 8 variables corresponding to position and velocity of the ball and the racket. Each agent receives its own local observation of the environment, and has two actions available corresponding to movement toward (or away from) the net and jumping. 
 
 The task is episodic. To solve the enviornment, the agents must get an average score of at least +0.5 over 100 consecutive episodes after taking the maximum score over both agents. 
 
