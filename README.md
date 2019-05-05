@@ -1,13 +1,14 @@
 # MultiAgent
 [//]: # (Image References)
 
-[image1]: https://github.com/OlaAhmad/MultiAgent/blob/master/image.png "image"
+[image1]: https://github.com/OlaAhmad/MultiAgent/blob/master/image.png "Tennis env"
+[image2]: https://github.com/OlaAhmad/MultiAgent/blob/master/scores.png "scores"
 
 # Project 3: Collaboration and Competition 
 
 ### Introduction
 
-![image][image1]
+![Tennis env][image1]
 
 In this environment, two agents play tennis table. The agents control their rackets to bounce a ball over the net. Every agent hits the ball over the net receives a reward of +0.1, and a reward -0.01 if the agent lets the ball hits the ground or hits the ball out of the bounds. The goal of every agent is to maintain the ball in play.
 
@@ -29,6 +30,8 @@ To train and test the agents, go to the MultiAgent folder and open the Tennis.ip
     Jupyter notebook Tennis.ipynb
 
 When runing the notebook, the actor-critic agent will start training over a number of episodes; Two neural networks will start training and simultaneously update their parameters every number of iterations. The updated parameters of the trained acrchitectures are saved in checkpoint files
+
+![scores][image2]
 
 ### Codes
 
