@@ -23,7 +23,7 @@ Download the MultiAgent repository from the top-right button. You can also clone
         
 ### Usage
 
-Go to the MultiAgent folder and open the Tennis.ipynb notebook as follows:
+To train and test the agents, go to the MultiAgent folder and open the Tennis.ipynb notebook:
 
     cd MultiAgent
     Jupyter notebook Tennis.ipynb
