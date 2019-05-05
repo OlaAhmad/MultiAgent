@@ -29,7 +29,7 @@ To train and test the agents, go to the MultiAgent folder and open the Tennis.ip
     cd MultiAgent
     Jupyter notebook Tennis.ipynb
 
-When runing the notebook, the actor-critic agent will start training over a number of episodes; Two neural networks will start training and simultaneously update their parameters every number of iterations. The updated parameters of the trained acrchitectures are saved in checkpoint files
+When runing the notebook, the actor-critic agent will start training over 3000 episodes; The actor-critic networks will start training and simultaneously update their parameters every time step. The updated parameters of the trained acrchitectures are saved in checkpoint files. The agents accomplished a score of > +0.5 over 100 consecutive episodes.
 
 ![scores][image2]
 
